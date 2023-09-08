@@ -1,5 +1,11 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for (let i = 0; i < array.length; i++){
+    for (let j = i + 1; j < array.length; j++) {
+      if  (array[i] + array[j] === target) {
+      return true; }
+     }
+  }
+  return false;
 }
 
 /* 
@@ -7,6 +13,10 @@ function hasTargetSum(array, target) {
 */
 
 /* 
+Iterate through array,
+add numbers in array until sum = target
+If sum = target , return true
+else, return false.
   Add your pseudocode here
 */
 
